@@ -39,7 +39,7 @@ namespace Wochenbericht
 
             Process P = new Process();
             P.StartInfo.FileName = "pdftk";
-            P.StartInfo.Arguments = pdf + " generate_fdf output " + fdf;
+            P.StartInfo.Arguments = pdffile + " generate_fdf output " + fdffile;
             P.Start();
 
 
