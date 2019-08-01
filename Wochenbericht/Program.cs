@@ -44,11 +44,13 @@ namespace Wochenbericht
 
             string jahr = "<< /T (Jahr) /V (2019) >>\n";
             jahr += "<</T (Name) /V (Paulsen, Frank)>>\n";
+            jahr += "<</T (Gesamt stundenRow1) /V (10)>>\n";
             jahr += "<</T (Gesamt stundenRow6) /V (10)>>\n";
+            jahr += "<</T (Gesamt stundenRow16) /V (10)>>\n";
+            jahr += "<</T (Gesamt stundenRow11) /V (10)>>\n";
+            jahr += "<</T (Gesamt stundenRow21) /V (10)>>\n";
+            jahr += "<</T (Gesamt stundenWochenstunden) /V (50)>>\n";
             /*
-            jahr += "<</T(Gesamt stundenRow16) /V (10)>>\n";
-            jahr += "<</T(Gesamt stundenRow11) /V (10)>>\n";
-            jahr += "<</T(Gesamt stundenRow21) /V (10)>>\n";
             */
 
             System.IO.File.WriteAllText(fdffile, fdf_head + jahr + fdf_tail);
@@ -67,13 +69,11 @@ namespace Wochenbericht
 
             /*
 /T (Ausgeführte Arbeiten Urlaub Unterricht Unterweisungen uswRow19)
-/T (Gesamt stundenRow1)
 /T (Ausgeführte Arbeiten Urlaub Unterricht Unterweisungen uswRow18)
 /T (Ausgef�hrte Arbeiten Urlaub Unterricht Unterweisungen uswRow17)
 /T (Ausgef�hrte Arbeiten Urlaub Unterricht Unterweisungen uswRow16)
 /T (Ausgef�hrte Arbeiten Urlaub Unterricht Unterweisungen uswRow15)
 /T (Ausgef�hrte Arbeiten Urlaub Unterricht Unterweisungen uswRow14)
-/T (Gesamt stundenWochenstunden)
 /T (Ausgef�hrte Arbeiten Urlaub Unterricht Unterweisungen uswRow13)
 /T (Ausgef�hrte Arbeiten Urlaub Unterricht Unterweisungen uswRow12)
 /T (bis)
