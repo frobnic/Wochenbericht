@@ -50,6 +50,11 @@ namespace Wochenbericht
             jahr += "<</T (Gesamt stundenRow11) /V (10)>>\n";
             jahr += "<</T (Gesamt stundenRow21) /V (10)>>\n";
             jahr += "<</T (Gesamt stundenWochenstunden) /V (50)>>\n";
+
+            for (int i = 1; i <= 25; i++)
+            {
+                jahr += String.Format("<</T (Ausgef" +(char)252+"hrte Arbeiten Urlaub Unterricht Unterweisungen uswRow{0}) /V ({0})>>\n",i);
+            }
             /*
             */
 
